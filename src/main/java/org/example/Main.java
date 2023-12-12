@@ -105,7 +105,6 @@ public class Main {
     }
 
     private static void doSomeCrud() throws SQLException {
-
         Language english =
                 "[.sql/]select * from Language where name = 'English'".fetchOne();
         Film film = Film.builder("My Movie", english)
